@@ -142,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A6E9EAC25BE0349001BA5C4 /* Build configuration list for PBXNativeTarget "BogusTV" */;
 			buildPhases = (
+				7ABA1D3725BE5D2000DBA55C /* Swiftlint */,
 				7A6E9E8025BE0348001BA5C4 /* Sources */,
 				7A6E9E8125BE0348001BA5C4 /* Frameworks */,
 				7A6E9E8225BE0348001BA5C4 /* Resources */,
@@ -265,6 +266,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ABA1D3725BE5D2000DBA55C /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect && swiftlint \nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A6E9E8025BE0348001BA5C4 /* Sources */ = {
