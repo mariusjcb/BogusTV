@@ -607,7 +607,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		7A541C9425BE235600DB5FC2 /* XCRemoteSwiftPackageReference "BogusApp-Common-UIComponents" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/mariusjcb/Developer/BogusApp/Common/BogusApp-Common-UIComponents";
+			repositoryURL = "../Common/BogusApp-Common-UIComponents";
 			requirement = {
 				branch = master;
 				kind = branch;
